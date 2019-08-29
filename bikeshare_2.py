@@ -50,6 +50,7 @@ def get_filters():
     return city, month, day
 
 def print_raw_data(city):
+    #According to the city chosen by the user, the data of the corresponding csv file is displayed five lines at a time
     while True:
         print('Would you like to read the first five lines of the data file?\n\n')
         answer = input('Enter yes or no\n\n')
