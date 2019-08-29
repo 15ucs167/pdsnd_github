@@ -18,6 +18,7 @@ def get_filters():
     """
 
     months = ['all', 'january', 'february', 'march', 'april', 'may', 'june']
+    days = ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
 
     print('\n\n')
     print('Hello! Let\'s explore some US bikeshare data!\n\n')
@@ -47,7 +48,7 @@ def get_filters():
     while(True):
         print('Which day of the given month do you want to explore?\n\n')
         day = input('all, monday, tuesday, wednesday, thursday, friday, saturday, sunday?\n\n').lower()
-        if day in ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']:
+        if day in days:
             break
         else:
             print('Invalid Input. Please choose from the given options and make sure the spelling\'s right.\n\n')
