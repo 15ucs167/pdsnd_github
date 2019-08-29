@@ -27,7 +27,9 @@ def get_filters():
         else:
             print('Invalid Input. Make sure you type city with the exact spacing and spelling.\n\n')
 
+    #Calling function to print raw data on user request after obtaining city.
     print_raw_data(city)
+
     # get user input for month (all, january, february, ... , june)
     while(True):
         print('For which month do you want to see the data?\n\n')
