@@ -56,23 +56,12 @@ def get_filters():
 
 def print_raw_data(city):
     while True:
-        print('Would you like to read the first five lines of the data file?\n\n')
+        print('Would you like to read five lines of the data file?\n\n')
         answer = input('Enter yes or no\n\n')
         if answer.lower() == 'yes':
             with open(CITY_DATA[city], 'r') as f:
                 for i in range(5):
                     print(f.readline())
-                while True:
-                    print('Would you like to read the next five lines of the file?\n\n')
-                    response = input('Enter yes or no\n\n')
-                    if response == 'no':
-                        break
-                    elif response == 'yes':
-                        for i in range(5):
-                            print(f.readline())
-                    else:
-                        print('Invalid Input. Please enter yes or no\n\n')
-            break
 
         elif answer.lower() == 'no':
             break
